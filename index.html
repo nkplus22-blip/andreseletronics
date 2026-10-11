@@ -51,7 +51,34 @@
         }
     </style>
 </head>
-<body class="font-sans bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+<body class="font-sans bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-white relative">
+
+    <div class="fixed right-4 bottom-6 z-50 flex flex-col gap-3 group">
+        <!-- Phone Call Floating Button -->
+        <a href="tel:+38761380757" 
+           title="Pozovite nas odmah" 
+           class="flex items-center justify-center w-13 h-13 sm:w-14 sm:h-14 bg-gradient-to-r from-brand-600 to-brand-500 text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 border-2 border-white/20 group-hover:shadow-brand-500/50">
+            <i class="fas fa-phone-alt text-xl sm:text-2xl"></i>
+        </a>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/38761380757" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           title="Pisite nam na WhatsApp" 
+           class="flex items-center justify-center w-13 h-13 sm:w-14 sm:h-14 bg-emerald-500 text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 border-2 border-white/20 hover:bg-emerald-600 group-hover:shadow-emerald-500/50">
+            <i class="fab fa-whatsapp text-2xl sm:text-3xl"></i>
+        </a>
+
+        <!-- Viber Floating Button -->
+        <a href="viber://chat?number=%2B38761380757" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           title="Pisite nam na Viber" 
+           class="flex items-center justify-center w-13 h-13 sm:w-14 sm:h-14 bg-purple-600 text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 border-2 border-white/20 hover:bg-purple-700 group-hover:shadow-purple-500/50">
+            <i class="fab fa-viber text-2xl sm:text-3xl"></i>
+        </a>
+    </div>
 
     <!-- Top Announcement Bar -->
     <div class="bg-gradient-to-r from-hitachi-700 via-brand-800 to-hitachi-700 text-white text-xs sm:text-sm py-2 px-4 text-center font-bold tracking-wide shadow-xl border-b border-white/10">
@@ -73,7 +100,10 @@
             <div class="flex items-center gap-5">
                 <a href="tel:+38761380757" class="hover:text-white transition font-bold text-slate-100"><i class="fas fa-phone-alt text-brand-500 mr-1.5"></i> +387 61 380 757</a>
                 <a href="https://wa.me/38761380757" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1 font-bold">
-                    <i class="fab fa-whatsapp text-emerald-400 text-sm"></i> WhatsApp / Viber
+                    <i class="fab fa-whatsapp text-emerald-400 text-sm"></i> WhatsApp
+                </a>
+                <a href="viber://chat?number=%2B38761380757" target="_blank" class="hover:text-purple-400 transition flex items-center gap-1 font-bold">
+                    <i class="fab fa-viber text-purple-400 text-sm"></i> Viber
                 </a>
             </div>
         </div>
@@ -660,7 +690,17 @@
                                 <i class="fab fa-whatsapp"></i>
                             </div>
                             <div>
-                                <div class="text-xs text-slate-400">WhatsApp / Viber brzi chat</div>
+                                <div class="text-xs text-slate-400">WhatsApp Brzi Chat</div>
+                                <div class="text-lg font-extrabold text-white">+387 61 380 757</div>
+                            </div>
+                        </a>
+
+                        <a href="viber://chat?number=%2B38761380757" target="_blank" class="flex items-center gap-4 bg-slate-950 p-4 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition">
+                            <div class="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center text-xl">
+                                <i class="fab fa-viber"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Viber Poruke / Chat</div>
                                 <div class="text-lg font-extrabold text-white">+387 61 380 757</div>
                             </div>
                         </a>
@@ -751,7 +791,8 @@
                 <ul class="space-y-3 text-sm">
                     <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-brand-500"></i> Sarajevska, Gradačac 76250</li>
                     <li class="flex items-center gap-2"><i class="fas fa-phone-alt text-brand-500"></i> <a href="tel:+38761380757" class="hover:text-white">+387 61 380 757</a></li>
-                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-emerald-400"></i> <a href="https://wa.me/38761380757" target="_blank" class="hover:text-white">WhatsApp / Viber Chat</a></li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-emerald-400"></i> <a href="https://wa.me/38761380757" target="_blank" class="hover:text-white">WhatsApp Chat</a></li>
+                    <li class="flex items-center gap-2"><i class="fab fa-viber text-purple-400"></i> <a href="viber://chat?number=%2B38761380757" target="_blank" class="hover:text-white">Viber Chat</a></li>
                 </ul>
             </div>
         </div>
