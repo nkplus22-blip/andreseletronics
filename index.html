@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andres Electronics | Vodeći stručnjaci za klime, toplotne pumpe i grijanje u Gradačcu</title>
+    <title>Andres Electronics | Ekskluzivni Uvoznik Hitachi Yutaki M za BiH | Klime, Toplotne Pumpe & Grijanje</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -24,7 +24,12 @@
                             500: '#0084ff',
                             600: '#0066cc',
                             700: '#0052a3',
-                            900: '#003366',
+                            800: '#003d7a',
+                            900: '#00264d',
+                        },
+                        hitachi: {
+                            500: '#e60012', // Hitachi signature red
+                            600: '#cc0010',
                         },
                         accent: {
                             500: '#ff6600',
@@ -35,72 +40,95 @@
             }
         }
     </script>
+    <style>
+        .gradient-glow {
+            box-shadow: 0 0 50px -12px rgba(0, 132, 255, 0.35);
+        }
+        .hitachi-glow {
+            box-shadow: 0 0 50px -12px rgba(230, 0, 18, 0.35);
+        }
+    </style>
 </head>
-<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+<body class="font-sans bg-slate-900 text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
 
-    <!-- Top Bar Contact Info -->
-    <div class="bg-brand-900 text-white text-xs sm:text-sm py-2 px-4">
+    <!-- Exclusive Importer Ribbon Announcement -->
+    <div class="bg-gradient-to-r from-hitachi-600 via-brand-700 to-hitachi-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-bold tracking-wide shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+            <span class="bg-white text-hitachi-600 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full shadow">ZVANIČNO</span>
+            <span>EKSKLUZIVNI I JEDINI DIREKTNI UVOZNIK HITACHI YUTAKI M ZA BOSNU I HERCEGOVINU!</span>
+            <a href="#hitachi-section" class="underline hover:text-slate-200 ml-1 transition">Saznajte više <i class="fas fa-arrow-right text-xs"></i></a>
+        </div>
+    </div>
+
+    <!-- Top Contact Strip -->
+    <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-4">
-                <span><i class="fas fa-map-marker-alt text-accent-500 mr-1.5"></i> Sarajevska, Gradačac 76250</span>
-                <span class="hidden md:inline"><i class="fas fa-clock text-accent-500 mr-1.5"></i> Pon - Sub: 08:00 - 18:00</span>
+            <div class="flex items-center gap-6">
+                <span><i class="fas fa-map-marker-alt text-brand-500 mr-1.5"></i> Sarajevska, Gradačac 76250 (VCM9+P58)</span>
+                <span class="hidden md:inline"><i class="fas fa-clock text-brand-500 mr-1.5"></i> Pon - Sub: 08:00 - 18:00</span>
             </div>
-            <div class="flex items-center gap-4">
-                <a href="tel:+38761380757" class="hover:text-accent-500 transition"><i class="fas fa-phone-alt text-accent-500 mr-1.5"></i> +387 61 380 757</a>
-                <a href="https://wa.me/38761380757" target="_blank" class="hover:text-green-400 transition flex items-center gap-1"><i class="fab fa-whatsapp text-green-400"></i> WhatsApp / Viber</a>
+            <div class="flex items-center gap-5">
+                <a href="tel:+38761380757" class="hover:text-white transition font-semibold"><i class="fas fa-phone-alt text-brand-500 mr-1.5"></i> +387 61 380 757</a>
+                <a href="https://wa.me/38761380757" target="_blank" class="hover:text-green-400 transition flex items-center gap-1 font-semibold">
+                    <i class="fab fa-whatsapp text-green-400"></i> WhatsApp / Viber
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Main Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
-                <div class="bg-brand-600 text-white p-2.5 rounded-xl shadow-md shadow-brand-500/20">
-                    <i class="fas fa-snowflake text-2xl"></i>
+                <div class="bg-gradient-to-br from-brand-500 to-hitachi-600 text-white p-2.5 rounded-xl shadow-lg">
+                    <i class="fas fa-bolt text-2xl"></i>
                 </div>
                 <div>
-                    <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">Andres<span class="text-brand-600">Electronics</span></span>
-                    <span class="block text-[10px] tracking-wider uppercase font-semibold text-slate-500">Klime • Toplotne Pumpe • Grijanje</span>
+                    <span class="text-xl sm:text-2xl font-black tracking-tight text-white">Andres<span class="text-brand-500">Electronics</span></span>
+                    <span class="block text-[10px] tracking-widest uppercase font-bold text-slate-400">Hitachi General Importer • HVAC Lider</span>
                 </div>
             </a>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-600">
-                <a href="#pocetna" class="hover:text-brand-600 transition">Početna</a>
-                <a href="#usluge" class="hover:text-brand-600 transition">Usluge & Proizvodi</a>
-                <a href="#zasto-mi" class="hover:text-brand-600 transition">Zašto Mi</a>
-                <a href="#o-nama" class="hover:text-brand-600 transition">O nama</a>
-                <a href="#garancija" class="hover:text-brand-600 transition">Garancija</a>
-                <a href="#lokacija" class="hover:text-brand-600 transition">Lokacija & Mapa</a>
-                <a href="#kontakt" class="hover:text-brand-600 transition">Kontakt</a>
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
+                <a href="#pocetna" class="hover:text-brand-500 transition">Početna</a>
+                <a href="#hitachi-section" class="text-hitachi-500 hover:text-white transition flex items-center gap-1">
+                    <i class="fas fa-star text-xs"></i> Hitachi Yutaki M
+                </a>
+                <a href="#usluge" class="hover:text-brand-500 transition">Usluge</a>
+                <a href="#kalkulator" class="hover:text-brand-500 transition">Kalkulator Uštede</a>
+                <a href="#o-nama" class="hover:text-brand-500 transition">O Nama</a>
+                <a href="#garancija" class="hover:text-brand-500 transition">Garancija</a>
+                <a href="#faq" class="hover:text-brand-500 transition">FAQ</a>
+                <a href="#kontakt" class="hover:text-brand-500 transition">Kontakt</a>
             </nav>
 
-            <!-- CTA Button -->
+            <!-- CTA Call Button -->
             <div class="hidden sm:flex items-center gap-3">
-                <a href="tel:+38761380757" class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-accent-500/20 transition flex items-center gap-2">
+                <a href="tel:+38761380757" class="bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-brand-500/20 transition flex items-center gap-2">
                     <i class="fas fa-phone-alt"></i>
-                    <span>Pozovite Odmah</span>
+                    <span>+387 61 380 757</span>
                 </a>
             </div>
 
-            <!-- Mobile Menu Toggle -->
-            <button id="menu-toggle" class="lg:hidden text-slate-700 p-2 focus:outline-none" aria-label="Toggle Menu">
+            <!-- Mobile Menu Trigger -->
+            <button id="menu-toggle" class="lg:hidden text-slate-200 p-2 focus:outline-none" aria-label="Menu Toggle">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
-            <a href="#pocetna" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Početna</a>
-            <a href="#usluge" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Usluge & Proizvodi</a>
-            <a href="#zasto-mi" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Zašto Mi</a>
-            <a href="#o-nama" class="block py-2 text-slate-700 font-medium hover:text-brand-600">O nama</a>
-            <a href="#garancija" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Garancija</a>
-            <a href="#lokacija" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Lokacija & Mapa</a>
-            <a href="#kontakt" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Kontakt</a>
-            <div class="pt-2">
-                <a href="tel:+38761380757" class="w-full bg-accent-500 text-white text-center font-semibold py-3 rounded-xl shadow-md block">
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#pocetna" class="block py-2 text-slate-200 font-semibold hover:text-brand-500">Početna</a>
+            <a href="#hitachi-section" class="block py-2 text-hitachi-500 font-bold hover:text-white">Hitachi Yutaki M (Ekskluzivno)</a>
+            <a href="#usluge" class="block py-2 text-slate-200 font-semibold hover:text-brand-500">Usluge & Proizvodi</a>
+            <a href="#kalkulator" class="block py-2 text-slate-200 font-semibold hover:text-brand-500">Kalkulator Uštede</a>
+            <a href="#o-nama" class="block py-2 text-slate-200 font-semibold hover:text-brand-500">O Nama</a>
+            <a href="#garancija" class="block py-2 text-slate-200 font-semibold hover:text-brand-500">Garancija & Servis</a>
+            <a href="#lokacija" class="block py-2 text-slate-200 font-semibold hover:text-brand-500">Lokacija & Mapa</a>
+            <a href="#kontakt" class="block py-2 text-slate-200 font-semibold hover:text-brand-500">Kontakt</a>
+            <div class="pt-3">
+                <a href="tel:+38761380757" class="w-full bg-hitachi-600 text-white text-center font-bold py-3 rounded-xl shadow-lg block">
                     <i class="fas fa-phone-alt mr-2"></i> +387 61 380 757
                 </a>
             </div>
@@ -108,396 +136,523 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="pocetna" class="relative bg-gradient-to-br from-brand-900 via-brand-700 to-slate-900 text-white overflow-hidden py-20 lg:py-28">
-        <!-- Background decorative elements -->
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        
+    <section id="pocetna" class="relative bg-slate-950 py-24 lg:py-32 overflow-hidden">
+        <!-- Ambient Grid Background -->
+        <div class="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-600/30 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-hitachi-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 bg-brand-500/30 border border-brand-400/30 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase text-brand-100">
-                    <i class="fas fa-award text-accent-500"></i> Broj 1 izbor u Gradačcu i regiji
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 bg-hitachi-600/20 border border-hitachi-500/40 px-4 py-2 rounded-full text-xs sm:text-sm font-bold text-slate-100 shadow-xl">
+                    <i class="fas fa-award text-hitachi-500 text-base"></i> JEDINI ZVANIČNI UVOZNIK HITACHI YUTAKI M ZA BiH
                 </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                    Vrhunsko <span class="text-accent-500">Grijanje</span>, Klime i Toplotne Pumpe
+
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight text-white">
+                    Neprikosnoveni Lider u <span class="bg-gradient-to-r from-brand-400 via-brand-500 to-hitachi-500 bg-clip-text text-transparent">Grijanju i Hlađenju</span>
                 </h1>
-                <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto lg:mx-0 font-normal">
-                    Uštedite energiju uz najsavremenije sisteme klimatizacije i grijanja. Profesionalna ugradnja, ovlašteni servis i dugogodišnja garancija za vaš dom i biznis.
+
+                <p class="text-slate-300 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Dobrodošli u **Andres Electronics**. Garantujemo najniže troškove grijanja, maksimalnu energetsku efikasnost i vrhunski komfor za vaš dom ili poslovanje uz direktni uvoz renomirane japanske tehnologije.
                 </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                    <a href="#kontakt" class="w-full sm:w-auto bg-accent-500 hover:bg-accent-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-accent-500/30 transition transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
-                        <i class="fas fa-calculator"></i> Zatražite Ponudu
+
+                <!-- Actions -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#hitachi-section" class="w-full sm:w-auto bg-hitachi-600 hover:bg-hitachi-500 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-hitachi-600/30 transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-3">
+                        <i class="fas fa-fire-flame-curved text-lg"></i> Hitachi Yutaki M Ponuda
                     </a>
-                    <a href="https://wa.me/38761380757" target="_blank" class="w-full sm:w-auto bg-white/10 hover:bg-white/25 border border-white/20 text-white font-bold px-8 py-4 rounded-xl backdrop-blur-sm transition text-center flex items-center justify-center gap-2">
-                        <i class="fab fa-whatsapp text-green-400 text-xl"></i> WhatsApp / Viber Konsultacije
+                    <a href="https://wa.me/38761380757" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-emerald-600/20 transition text-center flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-2xl"></i> Brzi WhatsApp Upit
                     </a>
                 </div>
 
-                <!-- Trust indicators -->
-                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/10 max-w-lg mx-auto lg:mx-0 text-left">
+                <!-- Key Stats Grid -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800 text-left">
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-accent-500">100%</div>
-                        <div class="text-xs text-slate-300">Garancija kvaliteta</div>
+                        <div class="text-2xl sm:text-3xl font-black text-white">#1</div>
+                        <div class="text-xs text-slate-400 font-semibold uppercase mt-1">Uvoznik za BiH</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-accent-500">Brzo</div>
-                        <div class="text-xs text-slate-300">Montaža i servis</div>
+                        <div class="text-2xl sm:text-3xl font-black text-brand-500">100%</div>
+                        <div class="text-xs text-slate-400 font-semibold uppercase mt-1">Originalna Oprema</div>
                     </div>
                     <div>
-                        <div class="text-2xl sm:text-3xl font-extrabold text-accent-500">A+++</div>
-                        <div class="text-xs text-slate-300">Energetska efikasnost</div>
+                        <div class="text-2xl sm:text-3xl font-black text-hitachi-500">A+++</div>
+                        <div class="text-xs text-slate-400 font-semibold uppercase mt-1">Ušteda Energije</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Hero Image / Card -->
-            <div class="lg:col-span-5 relative">
+            <!-- Hero Visual Feature Box -->
+            <div class="lg:col-span-5">
                 <div class="relative mx-auto max-w-md lg:max-w-none">
-                    <div class="absolute -inset-2 bg-gradient-to-r from-accent-500 to-brand-500 rounded-3xl blur-xl opacity-30 animate-pulse"></div>
-                    <div class="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl text-white space-y-6">
-                        <div class="flex items-center justify-between">
-                            <span class="bg-accent-500 text-white text-xs font-bold px-3 py-1 rounded-full">Top Ponuda</span>
-                            <span class="text-sm text-slate-300"><i class="fas fa-shield-alt text-accent-500"></i> Ovlašteni partner</span>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-hitachi-600 to-brand-500 rounded-3xl blur-2xl opacity-40"></div>
+                    <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                            <span class="bg-hitachi-600 text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Premium Izbor</span>
+                            <span class="text-xs font-bold text-slate-400"><i class="fas fa-shield-alt text-brand-500 mr-1"></i> Direktna Tvornička Garancija</span>
                         </div>
-                        <div>
-                            <h3 class="text-2xl font-bold">Toplotne Pumpe & Inverter Klime</h3>
-                            <p class="text-slate-300 text-sm mt-1">Najefikasnije rješenje za grijanje zimi i hlađenje ljeti s minimalnim troškovima električne energije.</p>
-                        </div>
+
                         <div class="space-y-3">
-                            <div class="flex items-center gap-3 text-sm bg-white/5 p-3 rounded-xl border border-white/10">
-                                <i class="fas fa-check-circle text-accent-500 text-lg"></i>
-                                <span>Inverter tehnologija nove generacije</span>
+                            <h3 class="text-2xl font-extrabold text-white">Hitachi Yutaki M Monobloc</h3>
+                            <p class="text-slate-400 text-sm">Vrhunska japanska toplotna pumpa projektovana za ekstremne zimske uslove rada do -25°C uz ekološki plin R32.</p>
+                        </div>
+
+                        <div class="space-y-3 pt-2">
+                            <div class="flex items-center gap-3 text-sm bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+                                <i class="fas fa-check-circle text-hitachi-500 text-lg shrink-0"></i>
+                                <span class="text-slate-200">Grijanje, hlađenje i topla voda u jednom sistemu</span>
                             </div>
-                            <div class="flex items-center gap-3 text-sm bg-white/5 p-3 rounded-xl border border-white/10">
-                                <i class="fas fa-check-circle text-accent-500 text-lg"></i>
-                                <span>Besplatna stručna procjena na vašoj adresi</span>
+                            <div class="flex items-center gap-3 text-sm bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+                                <i class="fas fa-check-circle text-hitachi-500 text-lg shrink-0"></i>
+                                <span class="text-slate-200">Bez posrednika – Najpovoljnija uvoznička cijena</span>
                             </div>
-                            <div class="flex items-center gap-3 text-sm bg-white/5 p-3 rounded-xl border border-white/10">
-                                <i class="fas fa-check-circle text-accent-500 text-lg"></i>
-                                <span>Ovlaštena montaža sa garancijom</span>
+                            <div class="flex items-center gap-3 text-sm bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+                                <i class="fas fa-check-circle text-hitachi-500 text-lg shrink-0"></i>
+                                <span class="text-slate-200">Kompletni rezervni dijelovi i certifikovani servis</span>
                             </div>
                         </div>
-                        <a href="tel:+38761380757" class="block w-full bg-brand-600 hover:bg-brand-500 text-center font-bold py-3 rounded-xl transition shadow-lg">
-                            Pozovite: +387 61 380 757
+
+                        <a href="tel:+38761380757" class="block w-full bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-center font-extrabold py-4 rounded-xl transition text-white shadow-lg">
+                            <i class="fas fa-phone-alt mr-2"></i> Pozovite za Cijenu: +387 61 380 757
                         </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exclusive Hitachi Showcase Section -->
+    <section id="hitachi-section" class="py-24 bg-slate-900 relative border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="bg-hitachi-600/20 text-hitachi-500 border border-hitachi-500/30 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full">Ekskluzivno Zastupništvo</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-white">Hitachi Yutaki M – Snaga Japanske Inovacije</h2>
+                <p class="text-slate-400 text-base sm:text-lg">Kao **jedini i direktni uvoznici za Bosnu i Hercegovinu**, Andres Electronics donosi vam vodeće svjetsko rješenje za grijanje uz maksimalnu uštedu el. energije.</p>
+            </div>
+
+            <!-- Feature Highlight Card -->
+            <div class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 rounded-3xl border border-slate-800 p-8 lg:p-12 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl font-black text-hitachi-500">HITACHI</span>
+                        <span class="text-xs bg-slate-800 text-slate-300 font-bold px-3 py-1 rounded-full uppercase">Yutaki M Serija</span>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Zašto je Hitachi Yutaki M neprikosnoven izbor?</h3>
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        Hitachi Yutaki M monoblok toplotne pumpe predstavljaju vrhunac tehnološkog razvoja. Sva hidraulična komponente integrisane su u spoljnu jedinicu, što štedi unutrašnji prostor i olakšava instalaciju bez potrebe za freonskim instalacijama unutar objekta.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800">
+                            <div class="text-brand-500 font-bold text-lg mb-1"><i class="fas fa-temperature-arrow-up mr-2"></i> Do 60°C Vode</div>
+                            <div class="text-xs text-slate-400">Visoka temperatura polazne vode čak i pri vanjskim temperaturama od -10°C.</div>
+                        </div>
+                        <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800">
+                            <div class="text-brand-500 font-bold text-lg mb-1"><i class="fas fa-leaf mr-2"></i> COP do 5.00</div>
+                            <div class="text-xs text-slate-400">Za 1 kWh utrošene struje dobijate do 5 kWh toplotne energije.</div>
+                        </div>
+                        <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800">
+                            <div class="text-brand-500 font-bold text-lg mb-1"><i class="fas fa-compress-alt mr-2"></i> Monoblok Sistem</div>
+                            <div class="text-xs text-slate-400">Brža i jednostavnija ugradnja uz minimalan prostor u kotlovnici.</div>
+                        </div>
+                        <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800">
+                            <div class="text-brand-500 font-bold text-lg mb-1"><i class="fas fa-wifi mr-2"></i> Pametno Upravljanje</div>
+                            <div class="text-xs text-slate-400">Potpuna kontrola putem aplikacije na vašem pametnom telefonu.</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <a href="#kontakt" class="bg-hitachi-600 hover:bg-hitachi-500 text-white font-extrabold px-8 py-4 rounded-xl shadow-lg transition text-center flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i> Zatražite Katalošku Ponudu
+                        </a>
+                        <a href="tel:+38761380757" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold px-8 py-4 rounded-xl transition text-center flex items-center justify-center gap-2">
+                            <i class="fas fa-headset text-brand-500"></i> Stručne Konsultacije
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1000&auto=format&fit=crop" alt="Hitachi Yutaki M Toplotna Pumpa" class="w-full h-[380px] object-cover" onerror="this.src='https://placehold.co/600x400/00264d/ffffff?text=Hitachi+Yutaki+M+Bosna'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-8">
+                            <span class="bg-hitachi-600 text-white text-xs font-black px-3 py-1 rounded-full uppercase w-max mb-2">Zvanična Tvornička Garancija</span>
+                            <h4 class="text-xl font-extrabold text-white">Prvi Izbor Za Objekate i Industriju u BiH</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services & Products Section -->
-    <section id="usluge" class="py-20 bg-white">
+    <!-- Interactive Savings Calculator -->
+    <section id="kalkulator" class="py-24 bg-slate-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm bg-brand-50 px-3.5 py-1 rounded-full">Naše Usluge & Asortiman</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Sve za idealnu klimu vašeg doma</h2>
-                <p class="text-slate-600 text-base sm:text-lg">Specijalizovani smo za prodaju, ugradnju i servis najkvalitetnijih sistema grijanja i hlađenja renomiranih svjetskih proizvođača.</p>
+                <span class="bg-brand-500/10 text-brand-400 border border-brand-500/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Kalkulator Uštede</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">Izračunajte Godišnju Uštedu na Grijanju</h2>
+                <p class="text-slate-400 text-base">Pogledajte koliko novca možete uštedjeti prelaskom sa tradicionalnih energenata (pelet, struja, lož ulje) na **Hitachi Yutaki M** toplotnu pumpu.</p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Inputs -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-300 mb-2">1. Površina stambenog/poslovnog prostora (m²): <span id="area-val" class="text-brand-500 font-black">120</span> m²</label>
+                        <input type="range" id="area-input" min="50" max="400" value="120" step="10" class="w-full h-3 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-brand-500" oninput="updateCalculator()">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-slate-300 mb-2">2. Trenutni način grijanja:</label>
+                        <select id="heating-type" class="w-full bg-slate-950 border border-slate-800 text-white rounded-xl px-4 py-3.5 focus:outline-none focus:border-brand-500 font-semibold" onchange="updateCalculator()">
+                            <option value="pelet">Pelet (Klasični kotao)</option>
+                            <option value="struja">Električni kotao / grijalice</option>
+                            <option value="lozulje">Lož ulje</option>
+                            <option value="drva">Drva</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-slate-300 mb-2">3. Kvalitet izolacije objekta:</label>
+                        <select id="insulation-type" class="w-full bg-slate-950 border border-slate-800 text-white rounded-xl px-4 py-3.5 focus:outline-none focus:border-brand-500 font-semibold" onchange="updateCalculator()">
+                            <option value="dobra">Dobra (Stiropor 8-10cm+, dobra stolarija)</option>
+                            <option value="prosjecna">Prosječna (Stiropor 5cm ili standardna žbuka)</option>
+                            <option value="slaba">Slaba / Bez izolacije</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Results Output Card -->
+                <div class="lg:col-span-6 bg-gradient-to-br from-brand-900/40 to-slate-950 border border-brand-500/30 rounded-2xl p-8 text-center space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-400">Procjena Godišnjeg Troška</span>
+                    
+                    <div class="grid grid-cols-2 gap-4 border-b border-slate-800 pb-6">
+                        <div>
+                            <div class="text-xs text-slate-400 font-semibold mb-1">Trenutni Trošak</div>
+                            <div id="old-cost" class="text-2xl sm:text-3xl font-black text-rose-400">2.800 KM</div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400 font-semibold mb-1">Sa Hitachi Pumpom</div>
+                            <div id="new-cost" class="text-2xl sm:text-3xl font-black text-emerald-400">950 KM</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="text-sm text-slate-300 mb-1">Procijenjena Godišnja Ušteda:</div>
+                        <div id="savings-val" class="text-4xl sm:text-5xl font-black text-white bg-gradient-to-r from-emerald-400 to-brand-400 bg-clip-text text-transparent">1.850 KM / godini</div>
+                    </div>
+
+                    <a href="#kontakt" class="block w-full bg-brand-600 hover:bg-brand-500 text-white font-extrabold py-3.5 rounded-xl transition shadow-lg text-sm">
+                        Besplatni Izlazak Na Teren i Precizan Proračun
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded Services & Products Section -->
+    <section id="usluge" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="bg-brand-500/10 text-brand-500 border border-brand-500/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Naš Kompletan Asortiman</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">Sve Za Idealnu Klimu i Grijanje</h2>
+                <p class="text-slate-400 text-base">Pored ekskluzivnog uvoza Hitachi toplotnih pumpi, nudimo i vrhunske inverter klima uređaje, sisteme podnog grijanja, industrijska HVAC rješenja i stručni servis.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
                 <!-- Service 1 -->
-                <div class="bg-slate-50 hover:bg-white border border-slate-200/80 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-xl group">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-wind"></i>
+                <div class="bg-slate-950 border border-slate-800 hover:border-hitachi-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-hitachi-600/20 text-hitachi-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-hitachi-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-fire-flame-curved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Hitachi Toplotne Pumpe</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Direktni uvoz Yutaki M serije. Najmodernija monoblok i split tehnologija za smanjenje računa grijanja do 75%.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-hitachi-500"></i> Zvanična garancija proizvođača</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-hitachi-500"></i> Povoljna uvoznička cijena</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-hitachi-500"></i> Integrisan ekološki plin R32</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Inverter Klima Uređaji</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Vrhunske klime za hlađenje i grijanje pri niskim vanjskim temperaturama. Visoka energetska klasa A+++, tihi rad i filtracija zraka.</p>
-                    <ul class="space-y-2 text-sm text-slate-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Prodaja i stručni odabir</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Profesionalna montaža</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Redovan servis i održavanje</li>
-                    </ul>
-                    <a href="#kontakt" class="text-brand-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Saznajte više <i class="fas fa-arrow-right"></i>
+                    <a href="#kontakt" class="text-hitachi-500 font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Zatražite Ponudu <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-slate-50 hover:bg-white border border-slate-200/80 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-xl group">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-fire-flame-curved"></i>
+                <div class="bg-slate-950 border border-slate-800 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-500/20 text-brand-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Inverter Klima Uređaji</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Prodaja, montaža i održavanje inverter klima visoke efikasnosti (A+++). Savršeno hlađenje ljeti i pouzdano grijanje zimi.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Renomirani svjetski brendovi</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Tihi rad i jonizatori zraka</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Montaža u roku od 24-48h</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Toplotne Pumpe</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Najekonomičniji sistem grijanja, hlađenja i pripreme tople vode. Smanjite račune za energiju do 75% uz ekološki prihvatljivu tehnologiju.</p>
-                    <ul class="space-y-2 text-sm text-slate-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Aerotermalne toplotne pumpe</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Dimenzionisanje po kvadraturi</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Puštanje u rad i garancija</li>
-                    </ul>
-                    <a href="#kontakt" class="text-brand-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Saznajte više <i class="fas fa-arrow-right"></i>
+                    <a href="#kontakt" class="text-brand-500 font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Zatražite Ponudu <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-slate-50 hover:bg-white border border-slate-200/80 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-xl group">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-temperature-high"></i>
+                <div class="bg-slate-950 border border-slate-800 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-500/20 text-brand-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-temperature-high"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Podno & Centralno Grijanje</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Projektovanje i izvođenje kompletnih instalacija podnog i radijatorskog grijanja prilagođenih vašem objektu.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Najkvalitetniji materijali i cijevi</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Ravnomjerna raspodjela toplote</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Rekonstrukcija postojećih sistema</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Sistemi Grijanja</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Kompletna rješenja za centralno grijanje, podno grijanje, radijatore i moderne kotlove prilagođene vašim potrebama i budžetu.</p>
-                    <ul class="space-y-2 text-sm text-slate-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Podno i radijatorsko grijanje</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Montaža kotlova i instalacija</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Rekonstrukcija starih sistema</li>
-                    </ul>
-                    <a href="#kontakt" class="text-brand-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Saznajte više <i class="fas fa-arrow-right"></i>
+                    <a href="#kontakt" class="text-brand-500 font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Zatražite Ponudu <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-slate-50 hover:bg-white border border-slate-200/80 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-xl group">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-tools"></i>
+                <div class="bg-slate-950 border border-slate-800 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-500/20 text-brand-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Ovlašteni Servis & Održavanje</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Redovni godišnji servisi, dezinfekcija, dopuna plina i brze hitne intervencije na terenu širom Bosne i Hercegovine.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Originalni rezervni dijelovi</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Certifikovani tehničari</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Produljenje garancije uređaja</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Servis i Održavanje</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Redovan servis klima uređaja i toplotnih pumpi osigurava dug vijek trajanja, maksimalnu efikasnost i čist zrak u vašem prostoru.</p>
-                    <ul class="space-y-2 text-sm text-slate-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Dezinfekcija i čišćenje</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Dopuna freona / plina</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Brza intervencija na terenu</li>
-                    </ul>
-                    <a href="#kontakt" class="text-brand-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Saznajte više <i class="fas fa-arrow-right"></i>
+                    <a href="#kontakt" class="text-brand-500 font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Zatražite Servis <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="bg-slate-50 hover:bg-white border border-slate-200/80 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-xl group">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-drafting-compass"></i>
+                <div class="bg-slate-950 border border-slate-800 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-500/20 text-brand-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Komercijalni & Industrijski HVAC</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Kompletna rješenja za zgrade, restorane, hotele i proizvodne pogone. VRF/VRV sistemi velikog kapaciteta.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Inženjerski proračuni gubitaka</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Projekat od ideje do ključa</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-500"></i> Nadzor i održavanje poslovanja</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Projektovanje i Inženjering</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Inženjerski pristup svakom objektu. Izrada optimalnih projekata klimatizacije i grijanja za stambene i poslovne objekte.</p>
-                    <ul class="space-y-2 text-sm text-slate-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Izračun toplotnih gubitaka</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Prijedlog najisplativijih opcija</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Podrška od ideje do realizacije</li>
-                    </ul>
-                    <a href="#kontakt" class="text-brand-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Saznajte više <i class="fas fa-arrow-right"></i>
+                    <a href="#kontakt" class="text-brand-500 font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Poslovni Upit <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="bg-slate-50 hover:bg-white border border-slate-200/80 hover:border-brand-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-xl group">
-                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
-                        <i class="fas fa-headset"></i>
+                <div class="bg-slate-950 border border-slate-800 hover:border-emerald-500/50 rounded-3xl p-8 transition-all duration-300 hover:shadow-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Direktna Podrška 24/7</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Trebate brzu procjenu ili stručni savjet bez čekanja? Naš tim vam stoji na raspolaganju putem telefona i poruka.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Brzi odgovori na Viber / WhatsApp</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Besplatna procjena objekta</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Stručni tehnički savjeti</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Korisnička Podrška 24/7</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Stručni savjeti, tehnička podrška i brzi dogovori oko termina ugradnje putem telefona, WhatsApp-a ili Vibera.</p>
-                    <ul class="space-y-2 text-sm text-slate-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Dostupni na Viber / WhatsApp</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Brz odziv na pozive</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-600"></i> Besplatne konzultacije</li>
-                    </ul>
-                    <a href="tel:+38761380757" class="text-brand-600 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                        Pozovite odmah <i class="fas fa-arrow-right"></i>
+                    <a href="https://wa.me/38761380757" target="_blank" class="text-emerald-400 font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Javite se na WhatsApp <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us / #1 in Market -->
-    <section id="zasto-mi" class="py-20 bg-slate-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0084ff_1px,transparent_1px)] [background-size:20px_20px]"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <span class="text-accent-500 font-bold tracking-wider uppercase text-sm bg-accent-500/10 border border-accent-500/20 px-3.5 py-1.5 rounded-full">Zašto smo broj 1?</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Izaberite lidera u oblasti grijanja i klimatizacije u Gradačcu</h2>
-                    <p class="text-slate-300 text-base">Kod nas ne kupujete samo uređaj, već cjelokupno rješenje po principu "ključ u ruke". Naš tim stručnjaka garantuje besprijekornu montažu i dugoročnu pouzdanost.</p>
-                    
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-accent-500 flex items-center justify-center shrink-0 font-bold text-white shadow-lg">1</div>
-                            <div>
-                                <h4 class="text-lg font-bold">Stručno savjetovanje i proračun</h4>
-                                <p class="text-slate-400 text-sm mt-1">Dolazimo na vaš objekat u Gradačcu i okolini, mjerimo toplotne potrebe i preporučujemo najisplativiji sistem.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-accent-500 flex items-center justify-center shrink-0 font-bold text-white shadow-lg">2</div>
-                            <div>
-                                <h4 class="text-lg font-bold">Ovlaštena i uredna montaža</h4>
-                                <p class="text-slate-400 text-sm mt-1">Svi uređaji se montiraju prema strogim proizvođačkim standardima uz korištenje profesionalnog alata.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-accent-500 flex items-center justify-center shrink-0 font-bold text-white shadow-lg">3</div>
-                            <div>
-                                <h4 class="text-lg font-bold">Pouzdana garancija i servis</h4>
-                                <p class="text-slate-400 text-sm mt-1">Pružamo punu servisnu podršku i rezervne dijelove tokom i nakon garantnog roka.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Callout Card -->
-                <div class="bg-gradient-to-br from-brand-800 to-brand-900 border border-brand-700 p-8 sm:p-10 rounded-3xl shadow-2xl space-y-6">
-                    <h3 class="text-2xl font-bold">Trebate brzu procjenu ili savjet?</h3>
-                    <p class="text-slate-200 text-sm">Naš tim je spreman da odgovori na sva vaša pitanja. Kontaktirajte nas putem telefona ili pišite nam na Viber/WhatsApp.</p>
-                    <div class="space-y-4 pt-2">
-                        <a href="tel:+38761380757" class="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-2xl transition border border-white/10">
-                            <div class="w-12 h-12 rounded-xl bg-accent-500 flex items-center justify-center text-white text-xl">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <div class="text-xs text-slate-300">Pozovite nas direktno</div>
-                                <div class="text-lg font-extrabold">+387 61 380 757</div>
-                            </div>
-                        </a>
-                        <a href="https://wa.me/38761380757" target="_blank" class="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-2xl transition border border-white/10">
-                            <div class="w-12 h-12 rounded-xl bg-green-500 flex items-center justify-center text-white text-xl">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div>
-                                <div class="text-xs text-slate-300">Pišite na WhatsApp / Viber</div>
-                                <div class="text-lg font-extrabold">+387 61 380 757</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="o-nama" class="py-20 bg-white">
+    <!-- Powerful "O Nama" (About Us) Section -->
+    <section id="o-nama" class="py-24 bg-slate-950 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
                 <div class="lg:col-span-6 space-y-6">
-                    <span class="text-brand-600 font-bold tracking-wider uppercase text-sm bg-brand-50 px-3.5 py-1 rounded-full">O našoj kompaniji</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Andres Electronics – Vaš pouzdani partner za komfor</h2>
-                    <p class="text-slate-600 text-base leading-relaxed">
-                        Osnovani s vizijom da pružimo najviši standard u oblasti klimatizacije, grijanja i toplotnih pumpi, **Andres Electronics** iz Gradačca predstavlja sinonim za kvalitet, stručnost i pouzdanost.
+                    <span class="bg-hitachi-600/20 text-hitachi-500 border border-hitachi-500/30 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Lideri u Struci</span>
+                    <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
+                        Andres Electronics – Sinonim za Snagu, Kvalitet i Bilo Kojem Mrazu Prkosan Komfor
+                    </h2>
+                    
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        **Andres Electronics** sa sjedištem u Gradačcu nastao je sa jasnim ciljem: osigurati vrhunsku tehnologiju klimatizacije i grijanja bez kompromisa. Danas smo ponosni nosioci titule **ekskluzivnog i jedinog direktnog uvoznika za Hitachi Yutaki M toplotne pumpe u Bosni i Hercegovini**.
                     </p>
-                    <p class="text-slate-600 text-base leading-relaxed">
-                        Naš tim čine iskusni inženjeri i tehničari koji prate najnovije svjetske trendove u energetskoj efikasnosti. Svaki projekat tretiramo s maksimalnom posvećenošću, osiguravajući dug vijek trajanja ugrađene opreme i maksimalne uštede za naše klijente.
+
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Kada investirate u svoj dom ili poslovni objekat, zaslužujete direktan kontakt sa uvoznikom – bez nepotrebnih posrednika, sa zagarantovanim tvorničkim cijenama, stručnom ugradnjom i punom garancijom na sve izvedene radove.
                     </p>
-                    <div class="grid grid-cols-2 gap-6 pt-4">
-                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
-                            <div class="text-3xl font-extrabold text-brand-600 mb-1">Stručni</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Certifikovani instalateri</div>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800">
+                            <div class="text-2xl font-black text-hitachi-500 mb-1">Ekskluzivnost</div>
+                            <div class="text-xs text-slate-400 font-semibold">Zvanični zastupnik Hitachi za BiH</div>
                         </div>
-                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
-                            <div class="text-3xl font-extrabold text-brand-600 mb-1">Vrhunski</div>
-                            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Svjetski brendovi opreme</div>
+                        <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800">
+                            <div class="text-2xl font-black text-brand-500 mb-1">Ključ u ruke</div>
+                            <div class="text-xs text-slate-400 font-semibold">Kompletna usluga od projekta do servisa</div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="lg:col-span-6 relative">
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
-                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1000&auto=format&fit=crop" alt="Andres Electronics Servis" class="w-full h-[400px] object-cover" onerror="this.src='https://placehold.co/600x400/003366/ffffff?text=Andres+Electronics'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-8">
-                            <div class="text-white">
-                                <span class="bg-accent-500 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Sjedište u Gradačcu</span>
-                                <h4 class="text-2xl font-bold mt-2">Profesionalnost na prvom mjestu</h4>
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1000&auto=format&fit=crop" alt="Andres Electronics Gradačac" class="w-full h-[450px] object-cover" onerror="this.src='https://placehold.co/600x450/00264d/ffffff?text=Andres+Electronics+Grada%C4%8Dac'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent flex items-end p-8">
+                            <div class="space-y-2">
+                                <span class="bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Gradačac, Sarajevska</span>
+                                <h4 class="text-2xl font-extrabold text-white">Vaš siguran partner za decenije pred nama</h4>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Guarantee Section -->
-    <section id="garancija" class="py-20 bg-slate-50 border-y border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="max-w-3xl mx-auto space-y-4 mb-16">
-                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm bg-brand-100 px-3.5 py-1 rounded-full">Sigurnost i Povjerenje</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Garancija na uređaje i montažu</h2>
-                <p class="text-slate-600 text-base sm:text-lg">Stojimo iza svakog ugrađenog sistema. Pružamo zvaničnu proizvođačku garanciju kao i garanciju na kvalitet izvedenih radova.</p>
+    <!-- Guarantee & Service Section -->
+    <section id="garancija" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="bg-brand-500/10 text-brand-500 border border-brand-500/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Potpuna Sigurnost</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">Garancija i Ovlaštena Podrška</h2>
+                <p class="text-slate-400 text-base">Znamo da je kupovina toplotne pumpe ili sistema grijanja dugoročna investicija. Zato garantujemo kvalitet u svakom koraku.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200/80 space-y-4">
-                    <div class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mx-auto">
+                <div class="bg-slate-950 p-8 rounded-3xl border border-slate-800 text-center space-y-4">
+                    <div class="w-16 h-16 bg-hitachi-600/20 text-hitachi-500 rounded-2xl flex items-center justify-center text-3xl mx-auto">
                         <i class="fas fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900">Zvanična Garancija</h3>
-                    <p class="text-slate-600 text-sm">Svi uređaji (klime, toplotne pumpe) dolaze uz originalnu tvorničku garanciju do nekoliko godina.</p>
+                    <h3 class="text-xl font-bold text-white">Tvornička Garancija</h3>
+                    <p class="text-slate-400 text-sm">Direktna garancija proizvođača Hitachi na sve vitalne komponente i kompresor.</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200/80 space-y-4">
-                    <div class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mx-auto">
+                <div class="bg-slate-950 p-8 rounded-3xl border border-slate-800 text-center space-y-4">
+                    <div class="w-16 h-16 bg-brand-500/20 text-brand-500 rounded-2xl flex items-center justify-center text-3xl mx-auto">
                         <i class="fas fa-handshake-angle"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900">Garancija na Montažu</h3>
-                    <p class="text-slate-600 text-sm">Naše stručne instalacije i vodovi pokriveni su garancijom na izvedene radove za vašu potpunu sigurnost.</p>
+                    <h3 class="text-xl font-bold text-white">Garancija na Montažu</h3>
+                    <p class="text-slate-400 text-sm">Svi radovi izvedeni su od strane certifikovanih stručnjaka uz maksimalnu urednost i poštovanje rokova.</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200/80 space-y-4">
-                    <div class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mx-auto">
-                        <i class="fas fa-screwdriver-wrench"></i>
+                <div class="bg-slate-950 p-8 rounded-3xl border border-slate-800 text-center space-y-4">
+                    <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center text-3xl mx-auto">
+                        <i class="fas fa-boxes-packing"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900">Ovlašteni Servis</h3>
-                    <p class="text-slate-600 text-sm">Obezbjeđujemo redovne servise, originalne rezervne dijelove i brzu tehničku podršku na terenu.</p>
+                    <h3 class="text-xl font-bold text-white">Lager Rezervnih Dijelova</h3>
+                    <p class="text-slate-400 text-sm">Kao direktni uvoznik raspolažemo originalnim rezervnim dijelovima na skladištu odmah bez čekanja.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Location & Map Section -->
-    <section id="lokacija" class="py-20 bg-white">
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <span class="bg-brand-500/10 text-brand-400 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Najčešća Pitanja</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">Odgovori na Vaša Pitanja</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <h4 class="text-lg font-bold text-white mb-2"><i class="fas fa-question-circle text-hitachi-500 mr-2"></i> Zašto odabrati Hitachi Yutaki M u odnosu na druge brendove?</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">Hitachi Yutaki M je vrhunski japanski monoblok sistem izuzetne pouzdanosti, visokog COP koeficijenta i stabilnog rada i na najnižim temperaturama do -25°C. Budući da je Andres Electronics direktni uvoznik za BiH, ostvarujete najbolju uslove i najbrži servis.</p>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <h4 class="text-lg font-bold text-white mb-2"><i class="fas fa-question-circle text-brand-500 mr-2"></i> Da li vršite ugradnju na teritoriji cijele Bosne i Hercegovine?</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">Da! Pored našeg matičnog sjedišta u Gradačcu, posjedujemo mobilne servisne i instalaterske timove koji pokrivaju cijelu Bosnu i Hercegovinu.</p>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <h4 class="text-lg font-bold text-white mb-2"><i class="fas fa-question-circle text-brand-500 mr-2"></i> Koliko traje ugradnja toplotne pumpe?</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">Zahvaljujući monoblok dizajnu Hitachi Yutaki M serije, standardna montaža i puštanje u rad se u većini slučajeva završi za svega 1 do 2 dana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Directions Section -->
+    <section id="lokacija" class="py-24 bg-slate-900 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm bg-brand-50 px-3.5 py-1 rounded-full">Pronađite nas</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Lokacija i Upute za Dolazak</h2>
-                <p class="text-slate-600 text-base sm:text-lg">Posjetite nas u Gradačcu ili nas kontaktirajte za dolazak na vašu adresu.</p>
+                <span class="bg-brand-500/10 text-brand-500 border border-brand-500/20 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Pronađite Nas</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white">Naša Lokacija u Gradačcu</h2>
+                <p class="text-slate-400 text-base">Posjetite naš izložbeni prostor ili skladište. Spremni smo za sastanak i dogovor oko vašeg projekta.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <!-- Location Info Card -->
-                <div class="lg:col-span-5 bg-slate-900 text-white p-8 sm:p-10 rounded-3xl shadow-xl space-y-6">
-                    <h3 class="text-2xl font-bold text-white">Andres Electronics</h3>
+                
+                <!-- Info Card -->
+                <div class="lg:col-span-5 bg-slate-950 p-8 rounded-3xl border border-slate-800 space-y-6">
+                    <h3 class="text-2xl font-extrabold text-white">Andres Electronics</h3>
                     
-                    <div class="space-y-4 text-slate-300">
+                    <div class="space-y-4 text-slate-300 text-sm">
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-accent-500 text-white flex items-center justify-center shrink-0 mt-1">
+                            <div class="w-10 h-10 rounded-xl bg-hitachi-600 text-white flex items-center justify-center shrink-0">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
-                                <div class="font-semibold text-white">Adresa:</div>
+                                <div class="font-bold text-white">Adresa:</div>
                                 <div>Sarajevska, Gradačac 76250</div>
-                                <div class="text-xs text-brand-400 mt-0.5">Plus Code: VCM9+P58</div>
+                                <div class="text-xs text-brand-400 font-semibold mt-1">Google Plus Code: VCM9+P58 / 8FPWVCM9+P5</div>
                             </div>
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-accent-500 text-white flex items-center justify-center shrink-0 mt-1">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
-                                <div class="font-semibold text-white">Telefon / Viber / WhatsApp:</div>
-                                <a href="tel:+38761380757" class="hover:text-accent-500 transition">+387 61 380 757</a>
+                                <div class="font-bold text-white">Telefon / Viber / WhatsApp:</div>
+                                <a href="tel:+38761380757" class="text-brand-400 hover:underline font-bold">+387 61 380 757</a>
                             </div>
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-accent-500 text-white flex items-center justify-center shrink-0 mt-1">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-white flex items-center justify-center shrink-0">
                                 <i class="fas fa-clock"></i>
                             </div>
                             <div>
-                                <div class="font-semibold text-white">Radno Vrijeme:</div>
-                                <div>Ponedjeljak – Subota: 08:00 – 18:00</div>
-                                <div class="text-xs text-slate-400">Nedjelja: po dogovoru</div>
+                                <div class="font-bold text-white">Radno Vrijeme:</div>
+                                <div>Pon - Sub: 08:00 - 18:00</div>
+                                <div class="text-xs text-slate-400">Nedjelja: po dogovoru za hitne upite</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-800">
-                        <a href="https://maps.google.com/?q=Sarajevska,+Gradačac+76250" target="_blank" class="block w-full bg-accent-500 hover:bg-accent-600 text-white font-bold py-3.5 rounded-xl text-center shadow-lg transition">
-                            <i class="fas fa-directions mr-2"></i> Pokreni Google Mape (Upute)
+                        <a href="https://maps.google.com/?q=Sarajevska,+Gradačac+76250" target="_blank" class="block w-full bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-white font-extrabold py-3.5 rounded-xl text-center transition shadow-lg">
+                            <i class="fas fa-directions mr-2"></i> Otvori Upute u Google Mapama
                         </a>
                     </div>
                 </div>
 
-                <!-- Google Map Iframe -->
-                <div class="lg:col-span-7 h-[450px] rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+                <!-- Google Map Embed -->
+                <div class="lg:col-span-7 h-[450px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.0!2d18.43!3d44.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDUyJNDguMCJOIDE4wrAyNS44IkU!5e0!3m2!1shr!2sba!4v1650000000000!5m2!1shr!2sba" 
                         width="100%" 
@@ -506,158 +661,150 @@
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade"
-                        title="Andres Electronics Lokacija Gradačac">
+                        title="Andres Electronics Gradačac Mapa">
                     </iframe>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Contact & Inquiry Form Section -->
-    <section id="kontakt" class="py-20 bg-slate-50 border-t border-slate-200">
+    <!-- Direct Inquiry Form Section -->
+    <section id="kontakt" class="py-24 bg-slate-950 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
                 <div class="lg:col-span-6 space-y-6">
-                    <span class="text-brand-600 font-bold tracking-wider uppercase text-sm bg-brand-100 px-3.5 py-1 rounded-full">Stupite u kontakt</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Zatražite besplatnu ponudu ili savjet</h2>
-                    <p class="text-slate-600 text-base leading-relaxed">
-                        Imate pitanja u vezi cijena klima uređaja, toplotnih pumpi ili ugradnje centralnog grijanja? Pošaljite nam upit ili nas nazovite odmah. Odgovaramo u najkraćem roku!
+                    <span class="bg-hitachi-600/20 text-hitachi-500 border border-hitachi-500/30 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Brza Ponuda</span>
+                    <h2 class="text-3xl sm:text-5xl font-black text-white">Stupite u Kontakt sa Glavnim Uvoznikom</h2>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Ispunite formu ispod i naš inženjerski tim će pripremiti besplatnu, neobavezujuću ponudu prilagođenu vašem objektu.
                     </p>
 
                     <div class="space-y-4 pt-2">
-                        <div class="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
-                            <div class="w-12 h-12 rounded-xl bg-accent-500 text-white flex items-center justify-center text-xl shadow-md">
+                        <a href="tel:+38761380757" class="flex items-center gap-4 bg-slate-900 p-4 rounded-2xl border border-slate-800 hover:border-brand-500/50 transition">
+                            <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center text-xl">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
-                                <div class="text-xs text-slate-500">Direktni telefon</div>
-                                <a href="tel:+38761380757" class="text-lg font-bold text-slate-900 hover:text-brand-600">+387 61 380 757</a>
+                                <div class="text-xs text-slate-400">Pozovite direkciju</div>
+                                <div class="text-lg font-extrabold text-white">+387 61 380 757</div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
-                            <div class="w-12 h-12 rounded-xl bg-green-500 text-white flex items-center justify-center text-xl shadow-md">
+                        <a href="https://wa.me/38761380757" target="_blank" class="flex items-center gap-4 bg-slate-900 p-4 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl">
                                 <i class="fab fa-whatsapp"></i>
                             </div>
                             <div>
-                                <div class="text-xs text-slate-500">WhatsApp / Viber brza poruka</div>
-                                <a href="https://wa.me/38761380757" target="_blank" class="text-lg font-bold text-slate-900 hover:text-green-600">+387 61 380 757</a>
+                                <div class="text-xs text-slate-400">WhatsApp / Viber brzi chat</div>
+                                <div class="text-lg font-extrabold text-white">+387 61 380 757</div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="lg:col-span-6 bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-200">
-                    <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                <!-- Form Card -->
+                <div class="lg:col-span-6 bg-slate-900 p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl">
+                    <form id="contact-form" onsubmit="handleInquiry(event)" class="space-y-5">
                         <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Vaše Ime i Prezime</label>
-                            <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800" placeholder="npr. Amir Hodžić">
+                            <label class="block text-sm font-bold text-slate-300 mb-1">Ime i Prezime</label>
+                            <input type="text" id="cust-name" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500" placeholder="npr. Marko Marković">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Broj Telefona / Viber</label>
-                            <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800" placeholder="npr. +387 61 ...">
+                            <label class="block text-sm font-bold text-slate-300 mb-1">Broj Telefona / Viber</label>
+                            <input type="tel" id="cust-phone" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500" placeholder="+387 61 ...">
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Usluga koja vas zanima</label>
-                            <select id="service" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800 bg-white">
-                                <option value="Klima uređaj">Klima uređaj (Inverter)</option>
-                                <option value="Toplotna pumpa">Toplotna pumpa</option>
-                                <option value="Sistem grijanja">Sistem grijanja / podno grijanje</option>
-                                <option value="Servis i održavanje">Servis / Održavanje</option>
-                                <option value="Ostalo">Ostalo</option>
+                            <label class="block text-sm font-bold text-slate-300 mb-1">Zainteresovani ste za:</label>
+                            <select id="cust-interest" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500 font-semibold">
+                                <option value="Hitachi Yutaki M Toplotna Pumpa">Hitachi Yutaki M Toplotnu Pumpu (Ekskluzivno)</option>
+                                <option value="Inverter Klima Uređaj">Inverter Klima Uređaje</option>
+                                <option value="Podno i Centralno Grijanje">Podno / Centralno Grijanje</option>
+                                <option value="Servis i Održavanje">Servis ili Održavanje</option>
+                                <option value="Industrijski HVAC">Komercijalni / Industrijski objekat</option>
                             </select>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-1">Poruka / Detalji objekta</label>
-                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800" placeholder="Opišite vaš prostor ili potrebu (kvadratura, lokacija)..."></textarea>
+                            <label class="block text-sm font-bold text-slate-300 mb-1">Poruka / Kvadratura Objekta</label>
+                            <textarea id="cust-msg" rows="3" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-brand-500" placeholder="Opišite vaš objekat (m², lokacija, postojeće grijanje)..."></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-brand-500/25 transition flex items-center justify-center gap-2">
+                        <button type="submit" class="w-full bg-gradient-to-r from-hitachi-600 to-brand-600 hover:from-hitachi-500 hover:to-brand-500 text-white font-extrabold py-4 rounded-xl shadow-xl transition flex items-center justify-center gap-2">
                             <i class="fas fa-paper-plane"></i> Pošaljite Upit
                         </button>
                     </form>
 
-                    <!-- Success Notification Box (No alert used!) -->
-                    <div id="success-msg" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-xl text-green-800 text-center text-sm font-medium">
-                        <i class="fas fa-check-circle text-green-600 mr-2 text-base"></i> Hvala vam! Vaš upit je uspješno pripremljen. Kontaktirat ćemo vas uskoro ili nas možete nazvati na +387 61 380 757.
+                    <!-- Success Message Box -->
+                    <div id="form-success" class="hidden mt-4 p-4 bg-emerald-950/80 border border-emerald-500/50 rounded-xl text-emerald-200 text-center text-sm font-semibold">
+                        <i class="fas fa-check-circle text-emerald-400 text-lg mr-2"></i> Hvala vam! Vaš upit je zaprimljen. Uskoro ćemo vas kontaktirati.
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
             <div class="space-y-4">
                 <div class="flex items-center gap-3">
-                    <div class="bg-brand-600 text-white p-2 rounded-xl">
-                        <i class="fas fa-snowflake text-xl"></i>
+                    <div class="bg-gradient-to-br from-brand-500 to-hitachi-600 text-white p-2 rounded-xl">
+                        <i class="fas fa-bolt text-xl"></i>
                     </div>
-                    <span class="text-xl font-extrabold text-white">Andres<span class="text-brand-500">Electronics</span></span>
+                    <span class="text-xl font-black text-white">Andres<span class="text-brand-500">Electronics</span></span>
                 </div>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Vaš pouzdani partner broj 1 za klimatizaciju, toplotne pumpe i moderne sisteme grijanja u Gradačcu i široj regiji.
+                <p class="text-sm leading-relaxed">
+                    Jedini zvanični i direktni uvoznik Hitachi Yutaki M toplotnih pumpi za Bosnu i Hercegovinu. Lider u klimatizaciji i grijanju sa sjedištem u Gradačcu.
                 </p>
             </div>
 
             <div>
-                <h4 class="text-white font-bold text-base mb-4">Brzi Linkovi</h4>
-                <ul class="space-y-2.5 text-sm">
+                <h4 class="text-white font-bold mb-4">Navigacija</h4>
+                <ul class="space-y-2 text-sm">
                     <li><a href="#pocetna" class="hover:text-white transition">Početna</a></li>
-                    <li><a href="#usluge" class="hover:text-white transition">Usluge & Proizvodi</a></li>
-                    <li><a href="#zasto-mi" class="hover:text-white transition">Zašto Mi</a></li>
-                    <li><a href="#o-nama" class="hover:text-white transition">O nama</a></li>
-                    <li><a href="#garancija" class="hover:text-white transition">Garancija</a></li>
+                    <li><a href="#hitachi-section" class="hover:text-hitachi-500 transition">Hitachi Yutaki M</a></li>
+                    <li><a href="#usluge" class="hover:text-white transition">Usluge</a></li>
+                    <li><a href="#kalkulator" class="hover:text-white transition">Kalkulator Uštede</a></li>
+                    <li><a href="#o-nama" class="hover:text-white transition">O Nama</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-white font-bold text-base mb-4">Usluge</h4>
-                <ul class="space-y-2.5 text-sm">
+                <h4 class="text-white font-bold mb-4">Asortiman</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#hitachi-section" class="hover:text-white transition">Toplotne Pumpe Monoblok</a></li>
                     <li><a href="#usluge" class="hover:text-white transition">Inverter Klime</a></li>
-                    <li><a href="#usluge" class="hover:text-white transition">Toplotne Pumpe</a></li>
-                    <li><a href="#usluge" class="hover:text-white transition">Sistemi Grijanja</a></li>
-                    <li><a href="#usluge" class="hover:text-white transition">Servis i Održavanje</a></li>
-                    <li><a href="#usluge" class="hover:text-white transition">Inženjering</a></li>
+                    <li><a href="#usluge" class="hover:text-white transition">Podno Grijanje</a></li>
+                    <li><a href="#usluge" class="hover:text-white transition">Servis & Održavanje</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-white font-bold text-base mb-4">Kontakt Info</h4>
+                <h4 class="text-white font-bold mb-4">Kontakt</h4>
                 <ul class="space-y-3 text-sm">
-                    <li class="flex items-start gap-3">
-                        <i class="fas fa-map-marker-alt text-accent-500 mt-1"></i>
-                        <span>Sarajevska, Gradačac 76250</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="fas fa-phone-alt text-accent-500"></i>
-                        <a href="tel:+38761380757" class="hover:text-white transition">+387 61 380 757</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="fab fa-whatsapp text-green-400"></i>
-                        <a href="https://wa.me/38761380757" target="_blank" class="hover:text-white transition">WhatsApp / Viber</a>
-                    </li>
+                    <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-brand-500"></i> Sarajevska, Gradačac 76250</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-phone-alt text-brand-500"></i> <a href="tel:+38761380757" class="hover:text-white">+387 61 380 757</a></li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-emerald-400"></i> <a href="https://wa.me/38761380757" target="_blank" class="hover:text-white">WhatsApp / Viber Chat</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
-            <div>&copy; 2026 Andres Electronics, Gradačac. Sva prava zadržana.</div>
-            <div class="mt-4 sm:mt-0 flex gap-6">
-                <a href="#pocetna" class="hover:text-slate-400 transition">Uslovi korištenja</a>
-                <a href="#pocetna" class="hover:text-slate-400 transition">Politika privatnosti</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-900 text-center sm:text-left sm:flex sm:justify-between text-xs text-slate-500">
+            <div>&copy; 2026 Andres Electronics Gradačac. Sva prava zadržana. Zvanični uvoznik za BiH.</div>
+            <div class="mt-4 sm:mt-0 space-x-4">
+                <a href="#pocetna" class="hover:text-slate-400">Uslovi korištenja</a>
+                <a href="#pocetna" class="hover:text-slate-400">Privatnost</a>
             </div>
         </div>
     </footer>
 
-    <!-- Interactive JS Script -->
     <script>
-        // Mobile menu toggle
+        // Mobile Navigation Toggle
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -665,33 +812,53 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu on link click
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
 
-        // Form Submission handler (using custom notification instead of alert)
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const service = document.getElementById('service').value;
-            const message = document.getElementById('message').value;
+        // ROI Calculator Logic
+        function updateCalculator() {
+            const area = parseInt(document.getElementById('area-input').value);
+            document.getElementById('area-val').innerText = area;
 
-            // Show success notification box
-            const successMsg = document.getElementById('success-msg');
-            successMsg.classList.remove('hidden');
+            const heatingType = document.getElementById('heating-type').value;
+            const insulation = document.getElementById('insulation-type').value;
 
-            // Reset form
-            document.getElementById('inquiry-form').reset();
+            // Insulation factor
+            let factor = 1.0;
+            if (insulation === 'prosjecna') factor = 1.25;
+            if (insulation === 'slaba') factor = 1.6;
 
-            // Hide success message after 6 seconds
+            // Base old cost calculation per m2
+            let costPerM2 = 22; // pelet default
+            if (heatingType === 'struja') costPerM2 = 32;
+            if (heatingType === 'lozulje') costPerM2 = 38;
+            if (heatingType === 'drva') costPerM2 = 18;
+
+            const oldTotal = Math.round(area * costPerM2 * factor);
+            const newTotal = Math.round(oldTotal * 0.32); // Hitachi savings average ~68%
+            const savings = oldTotal - newTotal;
+
+            document.getElementById('old-cost').innerText = oldTotal.toLocaleString() + ' KM';
+            document.getElementById('new-cost').innerText = newTotal.toLocaleString() + ' KM';
+            document.getElementById('savings-val').innerText = savings.toLocaleString() + ' KM / godini';
+        }
+
+        // Form Submission Handler
+        function handleInquiry(e) {
+            e.preventDefault();
+            const successBox = document.getElementById('form-success');
+            successBox.classList.remove('hidden');
+            document.getElementById('contact-form').reset();
             setTimeout(() => {
-                successMsg.classList.add('hidden');
+                successBox.classList.add('hidden');
             }, 6000);
         }
+
+        // Initial Run
+        updateCalculator();
     </script>
 </body>
 </html>
